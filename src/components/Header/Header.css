@@ -1,0 +1,34 @@
+.header {
+  flex-direction: column;
+}
+
+.header-img {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-img__logo {
+  width: 150px;
+  height: 60px;
+}
+
+.pagination {
+  background-color: #6D4B9C;
+  padding: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
