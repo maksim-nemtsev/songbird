@@ -14,7 +14,7 @@ const birdsCategories = [
 const Header = () => {
   const birdsCategoriesItems = birdsCategories.map((item, idx) => {
     return (
-      <li className="bird-item" key={item, idx}>
+      <li className="bird-item" key={`${item}-${idx}`}>
         <a href="/#">{item}</a>
       </li>
     );

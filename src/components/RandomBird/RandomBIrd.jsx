@@ -2,10 +2,9 @@ import React from 'react';
 import './RandomBird.css';
 
 import birdPictures from '../../assets/img/bird.png';
-import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
+import AudioPlayer from 'react-h5-audio-player';
 
 import 'react-h5-audio-player/lib/styles.css';
-import birdsData from '../../data/bird';
 // import 'react-h5-audio-player/lib/styles.less' Use LESS
 // import 'react-h5-audio-player/src/styles.scss' Use SASS
 
