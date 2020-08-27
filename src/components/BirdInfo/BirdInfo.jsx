@@ -8,14 +8,17 @@ import 'react-h5-audio-player/lib/styles.css';
 // import 'react-h5-audio-player/src/styles.scss' Use SASS
 
 const BirdInfo = ({ selectedAnswer }) => {
-  console.log(selectedAnswer);
+
   return (
-    <div>
+    <div className='bird-info card'>
       {!selectedAnswer ? (
-        <div>dfdfdf</div>
+        <div>
+          <span>Послушайте плеер и выберите  птицу из списка !</span>
+          
+        </div>
       ) : (
         <div className="bird-info">
-          <img src={selectedAnswer.image} alt="bird" className="bird-image"/>
+          <img src={selectedAnswer.image} alt="bird" className="bird-image" />
           <div className="bird-info-list">
             <ul className="list-group">
               <li className="list-group-item">

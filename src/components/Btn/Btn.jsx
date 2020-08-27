@@ -2,10 +2,10 @@ import React from 'react';
 import './Btn.css';
 import { Button } from 'react-bootstrap';
 
-const Btn = () => {
+const Btn = ({ onClickHandler, active }) => {
   return (
-    <Button type="button" className="btn">
-      Next
+    <Button onClick={onClickHandler} type="button" className={`btn ${active && 'btn-done'}`}>
+     Next
     </Button>
   );
 };

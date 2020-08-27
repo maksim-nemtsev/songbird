@@ -1,3 +1,7 @@
 .container {
     background-color: #CEC101;
 }
+
+.row {
+    flex-wrap: wrap;
+}

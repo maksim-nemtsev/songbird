@@ -1,5 +1,42 @@
 .bird-image {
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.bird-info {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #743886;
+  color: rgb(255, 240, 211);
+  outline: none;
+  margin: 20px 0;
+}
+
+.list-group-item {
+  background-color: #8466bb;
+}
+
+.bird-info .rhap_container {
+  background-color: #5abe8f;
+  border-radius: 10px;
+}
+
+.bird-info .rhap_progress-container {
+  background-color: #5abe8f;
+  border-radius: 10px;
+}
+
+.bird-info .rhap_main-controls {
+  background-color: rgb(255, 240, 211);
+  border-radius: 40%;
+}
+
+.bird-info .rhap_progress-bar-show-download {
+  background-color: rgb(255, 240, 211);
+}
+
+.bird-info .rhap_volume-bar {
+  background-color: rgb(255, 240, 211);
 }

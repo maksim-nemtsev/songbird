@@ -5,7 +5,7 @@
 .header-img {
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header-img__logo {
@@ -14,7 +14,7 @@
 }
 
 .pagination {
-  background-color: #6D4B9C;
+  background-color: #5abe8f;
   padding: 8px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -26,9 +26,10 @@ li {
 }
 
 a {
-  color: #ffffff;
+  color: rgb(255, 248, 233);
 }
 
 a:hover {
   text-decoration: none;
+  color: rgb(255, 221, 217);
 }

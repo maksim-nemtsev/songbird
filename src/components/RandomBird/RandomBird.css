@@ -1,8 +1,9 @@
 .random-bird {
   background-color: #8e70c5;
+  flex-direction: column;
 }
 
-.random-bird_bird {
+.random-bird_image {
   max-width: 20%;
 }
 
@@ -15,24 +16,24 @@
 }
 
 .random-list .rhap_container {
-  background-color: #44c296;
+  background-color: #5abe8f;
+  border-radius: 10px;
+}
+
+.random-list .rhap_progress-container {
+  background-color: #5abe8f;
   border-radius: 10px;
 }
 
 .random-list .rhap_main-controls {
-  background-color: rgb(107, 212, 207);
-  border-radius: 5px;
+  background-color: rgb(255, 240, 211);
+  border-radius: 40%;
 }
 
-.random-list .rhap_main-controls {
-    margin-right: 20px;
+.random-list .rhap_progress-bar-show-download {
+  background-color: rgb(255, 240, 211);
 }
 
-.random-list .rhap_horizontal-reverse .rhap_controls-section {
-    margin-right: 20px;
+.random-list .rhap_volume-bar {
+  background-color: rgb(255, 240, 211);
 }
-
-.random-list .rhap_horizontal-reverse .rhap_progress-section .rhap_time {
-    margin-right: 12px;
-}
-

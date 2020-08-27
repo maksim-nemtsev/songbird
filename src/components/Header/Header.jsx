@@ -11,7 +11,7 @@ const birdsCategories = [
   'Морские птицы',
 ];
 
-const Header = () => {
+const Header = ({ score }) => {
   const birdsCategoriesItems = birdsCategories.map((item, idx) => {
     return (
       <li className="bird-item" key={`${item}-${idx}`}>
@@ -24,8 +24,9 @@ const Header = () => {
     <div className="header d-flex">
       <div className="header-img d-flex">
         <img className="header-img__logo" src={logo} alt="logo" />
+        <h1>Songbird</h1>
         <h5>
-          score:<span>1</span>
+          score:<span>{score}</span>
         </h5>
       </div>
       <ul className="pagination">{birdsCategoriesItems}</ul>
