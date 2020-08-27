@@ -21,6 +21,14 @@
   width: 100%;
 }
 
+h1{
+  color: rgb(156, 28, 173);
+}
+
+span {
+  color: #2ebd86;
+}
+
 li {
   text-decoration: none;
 }
@@ -33,3 +41,23 @@ a:hover {
   text-decoration: none;
   color: rgb(255, 221, 217);
 }
+.bird-item {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bird-item.active {
+  background-color: rgb(48, 167, 141);
+}
+
+/* @media (max-width: 575.98px) {
+  .header {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  h5 {
+    display: block;
+    margin-left: 5px;
+  }
+} */

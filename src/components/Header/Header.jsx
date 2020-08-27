@@ -11,10 +11,11 @@ const birdsCategories = [
   'Морские птицы',
 ];
 
-const Header = ({ score }) => {
+const Header = ({ score, activeCategory }) => {
   const birdsCategoriesItems = birdsCategories.map((item, idx) => {
+    const active = activeCategory === idx ? 'active' : '';
     return (
-      <li className="bird-item" key={`${item}-${idx}`}>
+      <li className={`bird-item ${active}`} key={`${item}-${idx}`}>
         <a href="/#">{item}</a>
       </li>
     );
