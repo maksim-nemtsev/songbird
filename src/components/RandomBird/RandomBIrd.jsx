@@ -11,7 +11,11 @@ import 'react-h5-audio-player/lib/styles.css';
 const RandomBIrd = ({ answered, birdData }) => {
   return (
     <div className="random-bird jumbotron rounded d-flex">
-      <img className="random-bird_image" src={birdPictures} alt="bird" />
+      <img
+        className="random-bird_image"
+        src={answered ? birdData.image : birdPictures}
+        alt="bird"
+      />
       <div className="correct-bird text-center">
         <h2>{answered ? birdData.name : '******'}</h2>
       </div>
