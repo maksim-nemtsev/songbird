@@ -21,7 +21,7 @@ const GameOver = ({ score, onGameOverClick }) => {
 
   return (
     <div className="game-over">
-      <h1>Поздравляем!</h1>
+      <h1 className='game-over__title'>Поздравляем!</h1>
       <h6>
         Вы прошли викторину и набрали <span>{score}</span> из <span>{maxScore}</span> возможных
         баллов

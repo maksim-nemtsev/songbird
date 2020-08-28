@@ -66,13 +66,13 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" >
       <Header activeCategory={category} score={score} />
       {!gameOver ? (
         <div>
           <RandomBIrd birdData={birdsData[category][randomBirdNumber]} answered={answered} />
           <div className="row mb2">
-            <div className="col-lg-6">
+            <div className="col-lg-3">
               <BirdList
                 answered={answered}
                 randomBirdId={randomBird.id}
@@ -80,12 +80,14 @@ const App = () => {
                 birds={birdsData[category]}
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-9">
               <BirdInfo selectedAnswer={selectedAnswer} />
             </div>
           </div>
-          <div>
-            <Btn active={answered} onClickHandler={onNextRoundHandler}>Следующая птичка</Btn>
+          <div className='btn-bottom'>
+            <Btn active={answered} onClickHandler={onNextRoundHandler}>
+              Следующая птичка
+            </Btn>
           </div>
         </div>
       ) : (

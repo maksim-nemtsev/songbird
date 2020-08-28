@@ -12,11 +12,12 @@ const RandomBIrd = ({ answered, birdData }) => {
   return (
     <div className="random-bird jumbotron rounded d-flex">
       <img className="random-bird_image" src={birdPictures} alt="bird" />
+      <div className="correct-bird text-center">
+        <h2>{answered ? birdData.name : '******'}</h2>
+      </div>
+
       <div className="random-list">
         <ul className="random-list_bird-list">
-          <li className="random-list_bird-list-item">
-            <h2>{answered ? birdData.name : '******'}</h2>
-          </li>
           <li className="random-list_bird-list-item">
             <AudioPlayer
               src={birdData.audio}

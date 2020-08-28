@@ -2,16 +2,30 @@
   width: 200px;
   height: 150px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .bird-info {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #743886;
+  background-color: #46d894;
   color: rgb(255, 240, 211);
   outline: none;
   margin: 20px 0;
+}
+
+.bird-info .list-group-item:hover {
+  background-color: #8466bb;
+}
+
+.bird-info-list > .list-group > .list-group-item {
+  justify-content: center;
+}
+
+.col-lg-9 {
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .list-group-item {
@@ -19,18 +33,18 @@
 }
 
 .bird-info .rhap_container {
-  background-color: #5abe8f;
+  background-color: #6667bb;
   border-radius: 10px;
 }
 
 .bird-info .rhap_progress-container {
-  background-color: #5abe8f;
+  background-color: #6667bb;
   border-radius: 10px;
 }
 
 .bird-info .rhap_main-controls {
   background-color: rgb(255, 240, 211);
-  border-radius: 40%;
+  border-radius: 4px;
 }
 
 .bird-info .rhap_progress-bar-show-download {
@@ -39,4 +53,15 @@
 
 .bird-info .rhap_volume-bar {
   background-color: rgb(255, 240, 211);
+}
+
+@media screen and (max-width: 578px) and (min-width: 320px) {
+  h5 {
+    font-size: 20px;
+  }
+
+  .bird-info-list > .list-group > .list-group-item {
+    justify-content: center;
+    margin: 10px;
+  }
 }
