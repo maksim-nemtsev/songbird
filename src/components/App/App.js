@@ -24,7 +24,6 @@ const App = () => {
   const [gameOver, setGameOver] = useState(false);
 
   const randomBird = birdsData[category][randomBirdNumber];
-  console.log('randomBird: ', randomBird);
 
   useEffect(() => {
     console.log('correct bird:', randomBird.name);
