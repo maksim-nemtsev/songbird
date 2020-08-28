@@ -12,21 +12,26 @@ const GameOver = ({ score, onGameOverClick }) => {
       <div className="game-over">
         <h1>Поздравляем !</h1>
         <h6>
-          Вы победили в игре и набрали <span>{score}</span> из <span>{maxScore}</span>
+          Вы победили в игре и набрали <span>{score}</span> из <span>{maxScore}</span> возможных
+          баллов
         </h6>
-        <Btn active={true} onClickHandler={onGameOverClick}>Поиграть еще!</Btn>
+        <Btn active={true} onClickHandler={onGameOverClick}>
+          Поиграть еще!
+        </Btn>
       </div>
     );
   }
 
   return (
     <div className="game-over">
-      <h1 className='game-over__title'>Поздравляем!</h1>
+      <h1 className="game-over__title">Поздравляем!</h1>
       <h6>
         Вы прошли викторину и набрали <span>{score}</span> из <span>{maxScore}</span> возможных
         баллов
       </h6>
-      <Btn active={true} onClickHandler={onGameOverClick}>Поиграть еще!</Btn>
+      <Btn active={true} onClickHandler={onGameOverClick}>
+        Поиграть еще!
+      </Btn>
     </div>
   );
 };
