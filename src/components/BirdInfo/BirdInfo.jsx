@@ -22,10 +22,10 @@ const BirdInfo = ({ selectedAnswer }) => {
           <div className="bird-info-list">
             <ul className="list-group">
               <li className="list-group-item">
-                <h5>{selectedAnswer.name}</h5>
+                <h6>{selectedAnswer.name}</h6>
               </li>
               <li className="list-group-item">
-                <h3>{selectedAnswer.species}</h3>
+                <h5>{selectedAnswer.species}</h5>
               </li>
               <li className="list-group-item">
                 <h6>{selectedAnswer.description}</h6>
