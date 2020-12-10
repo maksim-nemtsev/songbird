@@ -1,0 +1,32 @@
+.container {
+  margin: 0 auto;
+  align-items: center;
+  background-color: #cec101;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 578px) and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+  span {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h1 {
+    position: absolute;
+    left: 95px;
+    font-size: 25px;
+  }
+  .header-img__logo {
+    position: relative;
+    left: -40px;
+  }
+}
